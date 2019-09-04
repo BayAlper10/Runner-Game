@@ -1,0 +1,119 @@
+
+body{
+    padding:0;
+    margin:0;
+    font-family:cursive;
+}
+main{
+    position:relative;
+    text-transform: uppercase;
+    width:50%;
+    min-width:480px;
+    margin:auto;
+}
+main > h1{
+    text-align:center;
+    letter-spacing:10px;
+    font-size:1.25em;
+    font-weight:lighter;
+}
+
+#screen{
+    position:relative;
+    outline: 1px solid black;
+    height:480px;
+    overflow:hidden;
+    background-color:white;
+    margin:auto;
+}
+
+#player{
+    position:absolute;
+    top:400px;
+    left:50%;
+    width:35px;
+    height:35px;
+    background-color:black;
+}
+
+#instructions{
+    margin-top:200px;
+    text-align: center;
+
+}
+
+.enemy{
+    position:absolute;
+    height:25px;
+    background-color:black;
+}
+
+#enemyLeft{
+    left:0;
+    width:30%;
+}
+
+#enemyRight{
+    right:0;
+    width:30%;
+}
+
+#board{
+    position:relative;
+    outline:3px solid black;
+    height:70px;
+    background-color:black;
+    color:white;
+    font-weight:lighter;
+}
+
+#score{
+    position:absolute;
+    left:50px;
+    font-size:1em;
+    font-weight:lighter;
+}
+
+#speed{
+    position:absolute;
+    right:100px;
+    top:0;
+    font-size:1em;
+    font-weight:lighter;
+}
+
+#eSpeed{
+    position:absolute;
+    right:100px;
+    top:22px;
+    font-size:1em;
+    font-weight:lighter;
+}
+#control-panel{
+    text-align:center;
+    margin: 1% 0;
+}
+#control-panel *{
+    display:inline-block;
+    font-size:2.5em;
+    background-color:rgb(219, 70, 59);
+    padding: 0px 50px;
+    border-radius:50px;
+    user-select:none;
+}
+
+#control-panel *:hover{
+    cursor:grab;
+    transform:scale(1.1,1.1);
+    border:2px solid black;
+    transition: transform 0.5s, border 1s;
+}
+
+footer{
+    background-color:black;
+    text-align:center;
+    font-weight:lighter;
+    color:white;
+    letter-spacing: 5px;
+    padding: 0 3% 3% 3%;
+}
